@@ -1,0 +1,311 @@
+/*Estos estilos sobre el body van a ser generales para todos los archivos html*/
+body {
+  background-color: #e7d3e9;
+  margin: 10px; /* Elimina los márgenes predeterminados del body */
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.negrita {
+  font-weight: bolder;
+}
+
+.material-symbols-outlined {
+  color: #0d6efd;
+}
+
+.btn-productos {
+  text-decoration: none;
+  background-color: #0d6efd;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.btn-productos:hover {
+  font-weight: bolder;
+}
+
+/*index.html PÁGINA PRINCIPAL*/
+
+.head {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  color: #b74e5d;
+  padding: 5px 50px 0;
+}
+
+.headLista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: black;
+
+    :hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  margin-left: 10px;
+  gap: 15px;
+  font-size: 12px;
+}
+
+#categorias {
+  border: 2px solid #b74e5d;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+#inicio {
+  font-size: 2.875rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* Sombra al borde */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+
+  /* Centrado en el body */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#inicio:hover {
+  background-color: rgb(213, 191, 220);
+  color: black;
+}
+
+/* nosotros.html */
+
+#sobre_nosostros {
+  padding: 0 50px;
+  width: 70%;
+  margin: auto;
+}
+
+.nosotros {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.agradecimiento {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#videos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+  padding-bottom: 100px;
+
+  iframe {
+    margin: auto;
+  }
+}
+
+/* productos.html Estilos para las tablas */
+
+.form-btn {
+  margin: 10px 10px 0 0;
+}
+
+.form-control {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none; /* Asegúrate de quitar cualquier borde */
+  outline: none;
+}
+
+.btn {
+  color: #4fa37c;
+  border: 1px solid #4fa37c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #4fa37c;
+  color: whitesmoke;
+  border: none;
+}
+
+#tablaPrincipal {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+  tr td table {
+    border-radius: 5px;
+    background-color: aliceblue;
+  }
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  width: 200px; /* Fija el ancho máximo de las celdas */
+  height: auto;
+  overflow: hidden; /* Previene que el contenido desborde */
+  padding: 8px;
+}
+
+.enlace {
+  background-color: #0d6efd;
+
+  td {
+    border-radius: 5px;
+  }
+
+  td a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
+
+th {
+  text-align: center;
+  padding: 15px;
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+#tablaPrincipal img {
+  width: 200px;
+  height: auto;
+}
+
+/*formulario.html*/
+
+.formUsuario {
+  padding-bottom: 50px;
+}
+
+.listaForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+
+  .btn {
+    margin: auto;
+    width: 60%;
+  }
+}
+
+label {
+  font-weight: bolder;
+}
+
+.small {
+  font-weight: normal;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*felicitaciones.html*/
+
+.listaBeneficios {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+
+  .beneficios {
+    list-style: none;
+
+    li {
+      position: relative; /* Permite posicionar el marcador personalizado */
+    }
+  }
+
+  .beneficios li::before {
+      content: "⭐"; /* Cambia este símbolo por el que desees */
+      line-height: 50px;
+    }
+  
+}
+
+/*ayuda.html*/
+
+.bodyAyuda {
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+.soporte_cliente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ol li {
+  line-height: 2rem;
+}
+
+.horario {
+  color: #b74e5d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.politicas {
+  background-color: black;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+  }
+  li {
+    color: white;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+#footer {
+  color: #b74e5d;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  span {
+    text-decoration: underline;
+  }
+}
