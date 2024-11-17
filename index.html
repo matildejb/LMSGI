@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!--En la etiqueta head podemos encontrar diversas etiquetas para definir metadatos, enlaces a recursos
+    externos y configuraciones del documento. El head proporciona información importante para el navegador
+    y para los motores de búsqueda sobre cómo renderizar el contenido, interpretar el diseño y gestionar la 
+    interacción del usuario con el sitio web-->
+
+    <!--Unicode Transformation Format - 8 bit. Codificación de carácteres, permite representar casi todos los caracteres 
+    y símbolos del mundo, esta etiqueta dice al navegador como interpretar el texto del documento HTML, evita problemas
+    al mostrar caracteres especiales de español como ñ, á, é o de otros alfabetos. Asi mejoramos la experiencia del usuario
+    teniendo un sitio web con texto legible y bien codificado que genera confianza y profesionalismo-->
     <meta charset="UTF-8" />
+    <!--Diseño adaptable-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Descripcion del sitio web incluir palabras clave para atraer a usuarios interesados en ropa-->
+    <meta
+      name="description"
+      content="Tienda de ropa moderna y sostenible para hombres, mujeres y niños. 
+    Encuentra las últimas tendencias en moda y accesorios."
+    />
+    <meta name="author" content="Matilde Jiménez Bedmar" />
+    <!--Palabras clave antiguamente los navegadores la utilizaban para posicionar tu sitio web, hoy en 
+    día y por el abuso que se hacia de esta etiqueta dejó de usarse y pasó a centrarse en el contenido 
+    real del sitio web como textos, encabezados, enlaces y otros metadatos como description-->
+    <meta
+      name="keywords"
+      content="moda, ropa sostenible, ropa para hombres, ropa para mujeres, moda infantil,
+       tendencias de moda, accesorios, tienda de ropa"
+    />
+
+    <!--Pestaña del sitio web-->
+    <title>Vibe Chic</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <!--Conectar con los estilos-->
     <link rel="stylesheet" href="../CSS/styles.css" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
-    <title>Vibe Chic</title>
+
     <!--Desplegado en Netlify 
-    https://tiendavibechic.netlify.app/-->
+    https://tiendavibechic.netlify.app/ -->
   </head>
   <body>
+    <!--En la etiqueta body es donde colocamos todo el contenido visible e interactivo
+    de una página web, así como algunos elementos no visibles pero funcionales como scripts-->
     <header class="head">
       <h1>¡Vibe Chic!</h1>
 
